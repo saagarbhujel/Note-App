@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.heading{
+    font-size: 38px;
+    padding: 10px;
+    text-align: center;
+}
+
+.info-text{
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.note-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 40px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.note{
+    padding: 17px;
+    resize: none;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    font-size: 18px;
+    height: 200px;
+    background: rgba(217 ,224 ,147, .1);
+    box-sizing: border-box;
+}
+
+.note::placeholder{
+    color: gray;
+    opacity: 30%;
+}
+
+.note:hover, .note:focus{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    transition: all 300ms ease;
+}
+
+.new-btn{
+    height: 200px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    outline: none;
+    border-radius: 15px;
+    font-size: 48px;
+    background: rgba(217 ,224 ,147, .1);
+    cursor: pointer;
+     color: rgba(0 ,0 ,0 ,0.3);
+}
+
+.new-btn:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    transition: all 300ms ease;
+    color: rgba(0 ,0 ,0 ,0.6);
+     background: rgba(217 ,224 ,147, 0.35);
+    
+}
